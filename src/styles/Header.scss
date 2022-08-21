@@ -1,0 +1,56 @@
+$primary-color: #4c77dc;
+$text-dark: #45424e;
+$text-light: white;
+
+.Header {
+  font-family: "IRANSansNormal";
+
+  .colored-top-bar {
+    background-color: $primary-color;
+    color: $text-light;
+    border-bottom-right-radius: 125px;
+    padding-bottom: 50px;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  nav {
+    background-color: white;
+    height: 75px;
+    border-radius: 5px;
+
+    a {
+      color: $text-dark;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: all 0.2s ease-in-out;
+    }
+
+    a:hover {
+      color: black;
+    }
+
+    .main-nav-divider {
+      display: inline-block;
+      margin: 10px;
+      height: 10px;
+      width: 1px;
+      background: #a0a0b1;
+    }
+
+    .icon {
+      font-size: 1.3rem;
+    }
+    .logo-icon {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Header {
+    .colored-top-bar {
+      border-bottom-right-radius: 0;
+    }
+  }
+}
