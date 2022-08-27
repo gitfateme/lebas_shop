@@ -7,7 +7,8 @@ import {
   faCartShopping,
   faCrown,
 } from "@fortawesome/free-solid-svg-icons";
-import { MyCarousel, MyCarouselItem } from "./MyCarousel";
+// import { MyCarousel, MyCarouselItem } from "./MyCarousel";
+import MyCarousel from "./MyCarousel";
 import carouselImg1 from "./images/carousel-1.jpg";
 import carouselImg2 from "./images/carousel-2.jpg";
 import carouselImg3 from "./images/carousel-3.jpg";
@@ -44,11 +45,16 @@ function Header() {
             </a>
           </div>
         </nav>
-        <MyCarousel>
+        {/* <MyCarousel>
           {carouselImages.map((carouselImg, index) => {
             return (
               <MyCarouselItem number={index + 1}>{carouselImg}</MyCarouselItem>
             );
+          })}
+        </MyCarousel> */}
+        <MyCarousel>
+          {carouselImages.map((img, index) => {
+            return (<img src={img} key={index} alt="test carousel"/>);
           })}
         </MyCarousel>
       </div>
