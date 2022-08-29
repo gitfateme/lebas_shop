@@ -52,9 +52,9 @@ function Header() {
             );
           })}
         </MyCarousel> */}
-        <MyCarousel>
+        <MyCarousel infiniteLoop={true}>
           {carouselImages.map((img, index) => {
-            return (<img src={img} key={index} alt="test carousel"/>);
+            return <img src={img} key={index} alt="test carousel" />;
           })}
         </MyCarousel>
       </div>
