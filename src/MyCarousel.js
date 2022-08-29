@@ -6,7 +6,7 @@ function MyCarousel({ children, infiniteLoop }) {
   const [length, setLength] = useState(children.length);
 
   const [isRepeating, setIsRepeating] = useState(infiniteLoop);
-  const [transitionEnabled, setTransitionEnabled] = useState(true);
+  const [transitionEnabled, setTransitionEnabled] = useState(false);
 
   const [touchPosition, setTouchPosition] = useState(null);
 
@@ -19,7 +19,7 @@ function MyCarousel({ children, infiniteLoop }) {
     if (!transitionEnabled) {
       setCurrentIndex(length);
     }
-  }, [transitionEnabled]);
+  }, [transitionEnabled, length]);
 
   function next() {
     if (currentIndex === length) {
