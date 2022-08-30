@@ -2,6 +2,8 @@ $text-dark: #45424e;
 
 .MobileNav {
   .mobile-tabs {
+    z-index: 99;
+
     display: flex;
     justify-content: space-evenly;
     align-items: center;

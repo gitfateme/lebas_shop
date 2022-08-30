@@ -108,7 +108,7 @@ function MyCarousel({ children, infiniteLoop }) {
   });
 
   return (
-    <div className="mycarousel-container">
+    <div className="mycarousel-container container">
       <div className="mycarousel-wrapper">
         <button className="left-arrow" onClick={prev}>
           &lt;

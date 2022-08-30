@@ -9,7 +9,7 @@ import {
 
 function MyNav() {
   return (
-    <nav className="d-none d-md-flex nav container bg-light mt-5 col-10 col-lg-8 align-items-center justify-content-between px-4">
+    <nav className=" d-none  d-md-flex nav container  mt-5 col-10 col-lg-8 align-items-center justify-content-between px-4">
       <div className="d-flex align-items-cente flex-row-reverse ">
         <a href="/" className="ms-4 icon">
           <FontAwesomeIcon icon={faMagnifyingGlass} />
