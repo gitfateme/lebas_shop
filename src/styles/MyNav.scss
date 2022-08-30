@@ -1,0 +1,35 @@
+$primary-color: #4c77dc;
+$text-dark: #45424e;
+$text-light: white;
+
+nav {
+  background-color: white;
+  height: 70px;
+  border-radius: 5px;
+
+  a {
+    color: $text-dark;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: all 0.2s ease-in-out;
+  }
+
+  a:hover {
+    color: black;
+  }
+
+  .main-nav-divider {
+    display: inline-block;
+    margin: 10px;
+    height: 10px;
+    width: 1px;
+    background: #a0a0b1;
+  }
+
+  .icon {
+    font-size: 1.3rem;
+  }
+  .logo-icon {
+    font-size: 2rem;
+  }
+}

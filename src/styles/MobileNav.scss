@@ -1,0 +1,48 @@
+$text-dark: #45424e;
+
+.MobileNav {
+  .mobile-tabs {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70px;
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    box-shadow: 0px -5px 35px -5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  .mobile-tab-wrapper {
+    text-decoration: none;
+    color: $text-dark;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    span {
+      margin-top: 5px;
+      font-size: 12px;
+    }
+
+    .mobile-icon {
+      color: rgba(0, 0, 0, 0.6);
+    }
+
+    .mobile-cart-notif {
+      background-color: rgb(242, 188, 49);
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: 10%;
+        
+    }
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .MobileNav {
+    display: none;
+  }
+}
