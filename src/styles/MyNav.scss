@@ -2,35 +2,38 @@ $primary-color: #4c77dc;
 $text-dark: #45424e;
 $text-light: white;
 
-nav {
-  height: 70px;
-  border-radius: 5px;
-  background-color: white;
-  border: 1px solid black;
+.MyNav {
+  nav {
+    height: 70px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid black;
+    width: 75%;
 
-  a {
-    color: $text-dark;
-    text-decoration: none;
-    font-size: 1.1rem;
-    transition: all 0.2s ease-in-out;
-  }
+    a {
+      color: $text-dark;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: all 0.2s ease-in-out;
+    }
 
-  a:hover {
-    color: black;
-  }
+    a:hover {
+      color: black;
+    }
 
-  .main-nav-divider {
-    display: inline-block;
-    margin: 10px;
-    height: 10px;
-    width: 1px;
-    background: #a0a0b1;
-  }
+    .main-nav-divider {
+      display: inline-block;
+      margin: 10px;
+      height: 10px;
+      width: 1px;
+      background: #a0a0b1;
+    }
 
-  .icon {
-    font-size: 1.3rem;
-  }
-  .logo-icon {
-    font-size: 2rem;
+    .icon {
+      font-size: 1.3rem;
+    }
+    .logo-icon {
+      font-size: 2rem;
+    }
   }
 }

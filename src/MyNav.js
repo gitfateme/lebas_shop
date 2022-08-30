@@ -9,8 +9,9 @@ import {
 
 function MyNav() {
   return (
-    <nav className=" d-none  d-md-flex nav container  mt-5 col-10 col-lg-8 align-items-center justify-content-between px-4">
-      <div className="d-flex align-items-cente flex-row-reverse ">
+<div className="MyNav">
+<nav className=" d-none  d-md-flex nav container mt-5 align-items-center justify-content-between px-4">
+      <div className="d-flex align-items-center flex-row-reverse ">
         <a href="/" className="ms-4 icon">
           <FontAwesomeIcon icon={faMagnifyingGlass} />
         </a>
@@ -28,6 +29,7 @@ function MyNav() {
         <a href="/">محصولات</a>
       </div>
     </nav>
+</div>
   );
 }
 
