@@ -1,0 +1,30 @@
+$primary-color: #4c77dc;
+$text-dark: #45424e;
+$text-light: white;
+
+.NewSection {
+  padding-top: 30px;
+  text-align: center;
+  min-height: 500px;
+
+  hr {
+    width: 100px;
+    margin: 0 auto;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+    padding: 10px;
+    font-family: "IRANSansBold";
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .NewSection {
+    padding-top: 0;
+
+    h2 {
+      font-size: 0.7rem;
+    }
+  }
+}

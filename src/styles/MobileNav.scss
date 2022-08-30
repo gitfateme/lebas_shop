@@ -11,6 +11,7 @@ $text-dark: #45424e;
     width: 100%;
     box-shadow: 0px -5px 35px -5px rgba(0, 0, 0, 0.1);
     text-align: center;
+    background-color: white;
   }
   .mobile-tab-wrapper {
     text-decoration: none;
@@ -36,7 +37,6 @@ $text-dark: #45424e;
       position: absolute;
       top: 0;
       left: 10%;
-        
     }
   }
 }
