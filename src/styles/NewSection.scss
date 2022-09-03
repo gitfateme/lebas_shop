@@ -17,6 +17,54 @@ $text-light: white;
     padding: 10px;
     font-family: "IRANSansBold";
   }
+
+  .item-wrapper {
+    padding: 10px;
+
+    .item {
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0.5rem 1rem rgba(black, 0.15);
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+
+      .item-image {
+        img {
+          width: 100%;
+        }
+      }
+      .item-name {
+        display: block;
+        line-height: 1.6;
+        height: 44px;
+        margin-top: 10px;
+      }
+
+      .price-wrapper {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        column-gap: 3px;
+        color: #e74c3c;
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .item-btn {
+        margin-bottom: 10px;
+        padding: 10px 20px;
+        visibility: hidden;
+      }
+
+      .item-details {
+        background-color: white;
+        margin-bottom: -30px;
+        transition: all 0.15s ease-out;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -25,6 +73,42 @@ $text-light: white;
 
     h2 {
       font-size: 0.7rem;
+    }
+
+    .item-wrapper {
+      padding: 5px;
+      font-size: 13px;
+      .item {
+        .price-wrapper {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .NewSection {
+    .item-wrapper {
+      .item {
+        .item-details {
+          margin-bottom: -60px;
+        }
+      }
+    }
+  }
+}
+
+@media (hover: hover) {
+  .NewSection {
+    .item-wrapper:hover {
+      .item-details {
+        transform: translateY(-30%);
+
+        .item-btn {
+          visibility: visible;
+        }
+      }
     }
   }
 }

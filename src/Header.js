@@ -2,9 +2,9 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles/Header.scss";
 import MyCarousel from "./MyCarousel";
-import carouselImg1 from "./images/carousel-1.jpg";
-import carouselImg2 from "./images/carousel-2.jpg";
-import carouselImg3 from "./images/carousel-3.jpg";
+import carouselImg1 from "./images/carousel-11.jpg";
+import carouselImg2 from "./images/carousel-22.jpg";
+import carouselImg3 from "./images/carousel-33.jpg";
 import MobileNav from "./MobileNav";
 import MyNav from "./MyNav";
 
