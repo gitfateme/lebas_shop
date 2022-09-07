@@ -3,7 +3,6 @@ import "./styles/NewSection.scss";
 import imgItem1 from "./images/item-1.jpg";
 import imgItem2 from "./images/item-2.jpg";
 import imgItem3 from "./images/item-3.jpg";
-import imgItem4 from "./images/item-4.jpg";
 import PaginationButtonsRow from "./PaginationButtonsRow";
 
 function NewSection() {
@@ -30,11 +29,6 @@ function NewSection() {
         image: imgItem3,
         price: 89000,
       },
-      {
-        name: "مانتو بلند",
-        image: imgItem4,
-        price: 54000,
-      },
     ];
     let longItemsArr = [];
     for (let i = 0; i < 10; i++) {
@@ -48,7 +42,7 @@ function NewSection() {
   }, []);
 
   useEffect(() => {
-    setPagesCount(items.length / itemsPerPage);
+    setPagesCount(Math.ceil(items.length / itemsPerPage));
     let newItems = items.slice(
       currentPage * itemsPerPage - itemsPerPage,
       currentPage * itemsPerPage
@@ -57,9 +51,22 @@ function NewSection() {
     console.log(newItems);
   }, [itemsPerPage, currentPage, items]);
 
+  function nextPage(e) {
+    e.preventDefault();
+    if (currentPage < pagesCount) {
+      setCurrentPage(currentPage + 1);
+    }
+  }
+
+  function prevPage(e) {
+    e.preventDefault();
+    if (currentPage > 1) {
+      setCurrentPage(currentPage - 1);
+    }
+  }
+
   return (
     <div className="NewSection ">
-      {pagesCount}
       <div className="container">
         <hr />
         <h2>جدیدترین محصولات</h2>
@@ -79,7 +86,7 @@ function NewSection() {
                         <span>{item.price}</span>
                         <span>تومان</span>
                       </div>
-                      <a href="/" className="item-btn btn btn-secondary">
+                      <a href="/" className="item-btn btn btn-warning">
                         مشاهده و خرید
                       </a>
                     </div>
@@ -88,7 +95,12 @@ function NewSection() {
               );
             })}
           </div>
-          <PaginationButtonsRow />
+          <PaginationButtonsRow
+            currentPage={currentPage}
+            pagesCount={pagesCount}
+            nextPage={nextPage}
+            prevPage={prevPage}
+          />
         </div>
       </div>
     </div>
