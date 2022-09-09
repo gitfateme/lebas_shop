@@ -4,11 +4,10 @@ $text-light: white;
 
 .MyNav {
   nav {
-    height: 70px;
+    height: 80px;
     border-radius: 5px;
     background-color: white;
     border: 1px solid black;
-    width: 75%;
 
     a {
       color: $text-dark;
@@ -36,4 +35,41 @@ $text-light: white;
       font-size: 2rem;
     }
   }
+}
+
+.search-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 400px;
+  margin-left: 20px;
+}
+
+.search-input-wrapper {
+  z-index: 1;
+
+  input {
+    border-radius: 5px;
+    height: 50px;
+    padding: 0 40px 0 100px;
+  }
+}
+
+.xmark {
+  z-index: 3;
+  font-size: 24px;
+  padding: 15px 20px;
+  position: relative;
+  right: 50px;
+}
+.xmark:hover {
+  cursor: pointer;
+}
+.search-btn {
+  z-index: 3;
+  flex: 0;
+  height: 40px;
+  padding: 0 25px;
+  position: relative;
+  left: 105px;
 }

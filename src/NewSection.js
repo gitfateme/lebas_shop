@@ -70,8 +70,8 @@ function NewSection() {
       <div className="container">
         <hr />
         <h2>جدیدترین محصولات</h2>
-        <hr />
-        <div className="new-pagination-container container mt-5">
+        <hr className="mb-2"/>
+        <div className="new-pagination-container container ">
           <div className="items-container row">
             {currentItems.map((item, index) => {
               return (
